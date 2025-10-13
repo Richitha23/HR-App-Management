@@ -33,5 +33,5 @@ spec:
     app: mongodb
   ports:
   - port: 3000
-    targetPort: 3001s
+    targetPort: 3001
   type: ClusterIP
