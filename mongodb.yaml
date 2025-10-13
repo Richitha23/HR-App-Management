@@ -16,7 +16,7 @@ spec:
       - name: mongodb
         image: mongo:7-jammy
         ports:
-        - containerPort: 3000
+        - containerPort: 5000
         volumeMounts:
         - name: mongodb-storage
           mountPath: /data/db
@@ -32,6 +32,6 @@ spec:
   selector:
     app: mongodb
   ports:
-  - port: 3000
-    targetPort: 3001
+  - port: 80
+    targetPort: 5000
   type: ClusterIP
